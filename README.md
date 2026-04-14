@@ -1,7 +1,7 @@
 # 🚀 XYRA AI
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="600" />
+  <img src="[https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmRlZXg2NTRidW01azl1N2I3a2JzcXpqNzh2bjI5eGZ5eWk3Y2c0bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aiaWqNYWKrYigXbupB/giphy.gif)" width="600" />
 </p>
 
 > 🧠 Understand any codebase like a senior developer — instantly.
