@@ -67,9 +67,9 @@ Instead of spending hours reading unfamiliar code, XYRA AI gives you:
 
 ```mermaid
 graph TD
-    A[GitHub Repo URL] --> B[Repo Cloning]
-    B --> C[File Parsing & Analysis]
-    C --> D[AI Processing (OpenAI)]
-    D --> E[Insights Generation]
-    E --> F[Frontend Display]
+    A["GitHub Repo URL"] --> B["Repo Cloning"]
+    B --> C["File Parsing & Analysis"]
+    C --> D["AI Processing (OpenAI)"]
+    D --> E["Insights Generation"]
+    E --> F["Frontend Display"]
 ```
