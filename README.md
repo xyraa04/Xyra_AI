@@ -72,3 +72,4 @@ graph TD
     C --> D[AI Processing (OpenAI)]
     D --> E[Insights Generation]
     E --> F[Frontend Display]
+```
