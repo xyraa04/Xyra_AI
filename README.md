@@ -26,7 +26,7 @@ Instead of spending hours reading unfamiliar code, XYRA AI gives you:
 ### 🧠 Codebase Understanding (Core Feature)
 
 <p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="500" />
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTNzYjUxZzVobWowOG9saGg3dXBranV4dGgyb204YmVtcjNuamExbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l49JXNIOuH2y6u1Z6/giphy.gif" width="500" />
 </p>
 
 - 🔍 Analyze any GitHub repository  
