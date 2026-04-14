@@ -40,7 +40,7 @@ Instead of spending hours reading unfamiliar code, XYRA AI gives you:
 ### 🐛 Bug Fix Assistant
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="500" />
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnU5a2drcnN2eWlkcDgyMmZyN3l4OGlteWtpaWV6bXdtYzljOHliYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E09b39IocWFyJRHG0B/giphy.gif" width="500" />
 </p>
 
 - Paste errors and stack traces  
