@@ -8,7 +8,7 @@
 
 ---
 
-## 🌌 Overview
+## 🌌 Overview:
 
 **XYRA AI** is an AI-powered developer tool that helps you **understand, debug, and design codebases in seconds**.
 
