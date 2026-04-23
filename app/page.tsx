@@ -1,10 +1,12 @@
 import React from 'react'
 import ThemeToggleButton from "@/components/ui/theme-toggle-button"
+import Navbar from "@/components/main/Navbar";
 
 const page = () => {
   return (
     <div>
-         <ThemeToggleButton variant="circle-blur" /> 
+         
+        <Navbar />
     </div>
   )
 }
