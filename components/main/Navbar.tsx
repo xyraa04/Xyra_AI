@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function MainNavbar() {
   const navItems = [
-    { name: "About", link: "/about" },
+    { name: "ABOUT", link: "/about" },
     { name: "Technology", link: "/technology" },
     { name: "Products", link: "/products" },
     { name: "Docs", link: "/docs" },
@@ -20,7 +20,7 @@ export default function MainNavbar() {
 
   return (
     <Navbar className="top-5">
-      <NavBody className="h-14 px-5 rounded-full bg-black/55 backdrop-blur-xl border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
+<NavBody>
 
         {/* Logo */}
         <Link
@@ -42,10 +42,10 @@ export default function MainNavbar() {
         </Link>
 
         {/* Nav */}
-        <NavItems
-          items={navItems}
-          className="text-sm text-white/75 gap-8"
-        />
+<NavItems
+  items={navItems}
+  className="text-[10px] tracking-[0.24em] font-medium uppercase"
+ />
 
         {/* CTA */}
         <div className="flex items-center shrink-0">
