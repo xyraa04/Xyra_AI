@@ -1,14 +1,11 @@
-import React from 'react'
-import ThemeToggleButton from "@/components/ui/theme-toggle-button"
 import Navbar from "@/components/main/Navbar";
+import Hero from "@/components/main/Hero";
 
-const page = () => {
+export default function Page() {
   return (
-    <div>
-         
-        <Navbar />
-    </div>
-  )
+    <main>
+      <Navbar />
+      <Hero />
+    </main>
+  );
 }
-
-export default page
