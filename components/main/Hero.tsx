@@ -1,6 +1,7 @@
 "use client";
 
 import { Globe, Sparkles, Bug, Blocks } from "lucide-react";
+import Shuffle from "@/components/Shuffle";
 
 export default function Hero() {
   const chips = [
@@ -27,15 +28,25 @@ export default function Hero() {
         </p>
 
         {/* Heading */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white max-w-5xl mx-auto">
-          Xyra AI{" "}
-          <span className="text-purple-400 drop-shadow-[0_0_18px_rgba(168,85,247,0.45)]">
-            builds ideas
-          </span>
-          <br />
-          and understands code.
-        </h1>
-
+<h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white max-w-5xl mx-auto">
+  <span className="inline-block text-inherit text-5xl md:text-6xl lg:text-7xl font-bold">
+      <Shuffle
+    text="Xyra AI"
+    shuffleDirection="right"
+    duration={0.35}
+    animationMode="evenodd"
+    shuffleTimes={1}
+    ease="power3.out"
+    stagger={0.03}
+    threshold={0.1}
+    triggerOnce={true}
+    respectReducedMotion={true}
+    loop={false}
+  />
+  </span>{" "}
+  <span className="text-purple-400">builds ideas</span>{" "}
+  and understands code.
+</h1>
         {/* Subtext */}
         <p className="max-w-3xl mx-auto mt-8 text-lg md:text-xl text-zinc-400 leading-relaxed">
           Paste a GitHub repository to analyze any codebase, or describe your
