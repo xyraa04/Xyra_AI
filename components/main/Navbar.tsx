@@ -12,21 +12,21 @@ import Link from "next/link";
 
 export default function MainNavbar() {
   const navItems = [
-    { name: "About", link: "/about" },
+    { name: "ABOUT", link: "/about" },
     { name: "Technology", link: "/technology" },
     { name: "Products", link: "/products" },
     { name: "Docs", link: "/docs" },
   ];
 
   return (
-    <Navbar className="top-5">
-      <NavBody className="h-14 px-5 rounded-full bg-black/55 backdrop-blur-xl border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
+    <Navbar className="top-0 pt-4 bg-transparent border-none shadow-none">
+<NavBody>
 
-        {/* Logo */}
+        {/* Logo  🚀 🌌 🪐 ✨ 🛰️ 🤖 🧠 ⚡ 🌙 💫 */}
         <Link
           href="/"
           className="flex items-center gap-2 cursor-pointer select-none relative z-50 shrink-0"
-        >
+        > 
           <Image
             src="/logo.png"
             alt="Xyra"
@@ -42,10 +42,10 @@ export default function MainNavbar() {
         </Link>
 
         {/* Nav */}
-        <NavItems
-          items={navItems}
-          className="text-sm text-white/75 gap-8"
-        />
+<NavItems
+  items={navItems}
+  className="text-[10px] tracking-[0.24em] font-medium uppercase"
+ />
 
         {/* CTA */}
         <div className="flex items-center shrink-0">
@@ -53,7 +53,7 @@ export default function MainNavbar() {
             variant="primary"
             className="h-9 px-4 text-sm font-medium rounded-lg bg-purple-600 hover:bg-purple-500 text-white shadow-[0_0_18px_rgba(168,85,247,0.35)] transition-all duration-300"
           >
-            Launch App
+            Launch App 🚀
           </NavbarButton>
         </div>
 

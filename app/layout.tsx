@@ -4,6 +4,12 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
+import { IBM_Plex_Mono } from "next/font/google";
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
 
 const montserrat = Montserrat({subsets:['latin'],variable:'--font-sans'});
 
@@ -35,7 +41,7 @@ export default function RootLayout({
       lang="en"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, jetbrainsMono.variable, "font-sans", montserrat.variable)}
     >
-      <body className="min-h-full flex flex-col">
+      <body className={plexMono.className}>
         <ThemeProvider
          attribute="class"
         defaultTheme="dark"
