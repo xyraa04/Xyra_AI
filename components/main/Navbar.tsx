@@ -19,7 +19,7 @@ export default function MainNavbar() {
   ];
 
   return (
-    <Navbar className="top-5">
+    <Navbar className="top-0 pt-4 bg-transparent border-none shadow-none">
 <NavBody>
 
         {/* Logo  🚀 🌌 🪐 ✨ 🛰️ 🤖 🧠 ⚡ 🌙 💫 */}

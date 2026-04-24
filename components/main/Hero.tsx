@@ -2,6 +2,13 @@
 
 import { Globe, Sparkles, Bug, Blocks } from "lucide-react";
 import Shuffle from "@/components/Shuffle";
+import { Press_Start_2P } from "next/font/google";
+import { GridScan } from "@/components/main/GridScan";
+
+const pixel = Press_Start_2P({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Hero() {
   const chips = [
@@ -14,12 +21,23 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen px-6 pt-24 pb-20 overflow-hidden">
-      {/* Background Glow */}
-<div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_30%,#6d28d9_0%,transparent_25%),radial-gradient(circle_at_bottom_right,#a21caf_0%,transparent_20%)]" />
+    <section className="relative min-h-screen px-6 pt-32 pb-20 overflow-hidden">
+<div className="absolute inset-0 -z-10 overflow-hidden bg-[#05010d]">
+  <GridScan
+  scanColor="#a081e9"
+  scanOpacity={0.16}
+  scanGlow={0.18}
+  scanDuration={5.5}
+  scanDelay={2.5}
+  linesColor="#1e1b2e"
+  noiseIntensity={0.003}
+  chromaticAberration={0}
+  bloomIntensity={0.02}
+/>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(168,85,247,0.18),transparent_35%)]" />
 
-      {/* Soft Grid */}
-      <div className="absolute inset-0 -z-10 opacity-[0.04] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:36px_36px]" />
+  <div className="absolute bottom-[-120px] left-1/2 -translate-x-1/2 w-[900px] h-[260px] bg-fuchsia-500/30 blur-[120px] rounded-full" />
+</div>
 
       <div className="max-w-6xl mx-auto text-center">
         {/* Tagline */}
@@ -29,23 +47,30 @@ export default function Hero() {
 
         {/* Heading */}
 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white max-w-5xl mx-auto">
-  <span className="inline-block text-inherit text-5xl md:text-6xl lg:text-7xl font-bold">
-      <Shuffle
-    text="Xyra AI"
-    shuffleDirection="right"
-    duration={0.35}
-    animationMode="evenodd"
-    shuffleTimes={1}
-    ease="power3.out"
-    stagger={0.03}
-    threshold={0.1}
-    triggerOnce={true}
-    respectReducedMotion={true}
-    loop={false}
-  />
-  </span>{" "}
-  <span className="text-purple-400">builds ideas</span>{" "}
+  <span
+    className={`${pixel.className} inline-block text-[22px] md:text-[34px] lg:text-[42px] mr-4 align-middle`}
+  >
+    <Shuffle
+      text="Xyra AI"
+      shuffleDirection="right"
+      duration={0.35}
+      animationMode="evenodd"
+      shuffleTimes={1}
+      ease="power3.out"
+      stagger={0.03}
+      threshold={0.1}
+      triggerOnce={true}
+      respectReducedMotion={true}
+      loop={false}
+    />
+  </span>
+
+<span className="text-purple-400 text-2xl md:text-3xl lg:text-5xl">
+  builds ideas
+</span>{" "}
+<span className="text-2xl md:text-2xl lg:text-5xl">
   and understands code.
+</span>
 </h1>
         {/* Subtext */}
         <p className="max-w-3xl mx-auto mt-8 text-lg md:text-xl text-zinc-400 leading-relaxed">
