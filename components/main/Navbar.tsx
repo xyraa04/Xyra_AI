@@ -22,11 +22,11 @@ export default function MainNavbar() {
     <Navbar className="top-5">
 <NavBody>
 
-        {/* Logo */}
+        {/* Logo  🚀 🌌 🪐 ✨ 🛰️ 🤖 🧠 ⚡ 🌙 💫 */}
         <Link
           href="/"
           className="flex items-center gap-2 cursor-pointer select-none relative z-50 shrink-0"
-        >
+        > 
           <Image
             src="/logo.png"
             alt="Xyra"
@@ -53,7 +53,7 @@ export default function MainNavbar() {
             variant="primary"
             className="h-9 px-4 text-sm font-medium rounded-lg bg-purple-600 hover:bg-purple-500 text-white shadow-[0_0_18px_rgba(168,85,247,0.35)] transition-all duration-300"
           >
-            Launch App
+            Launch App 🚀
           </NavbarButton>
         </div>
 
