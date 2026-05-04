@@ -453,7 +453,24 @@ export const GridScan: React.FC<GridScanProps> = ({
     const container = containerRef.current;
     if (!container) return;
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+if (!container) return;
+
+if (!window.WebGLRenderingContext) return;
+
+let renderer: THREE.WebGLRenderer | null = null;
+
+try {
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+} catch (err) {
+  console.warn("WebGL not supported, skipping GridScan");
+  return;
+}
+
+if (!renderer) return;
+
+rendererRef.current = renderer;
+
+rendererRef.current = renderer;
     rendererRef.current = renderer;
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.setSize(container.clientWidth, container.clientHeight);
