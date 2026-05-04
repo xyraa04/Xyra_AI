@@ -23,7 +23,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen px-6 pt-32 pb-20 overflow-hidden">
 <div className="absolute inset-0 -z-10 overflow-hidden bg-[#05010d]">
- 
+
+
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(168,85,247,0.18),transparent_35%)]" />
 
   <div className="absolute bottom-[-120px] left-1/2 -translate-x-1/2 w-[900px] h-[260px] bg-fuchsia-500/30 blur-[120px] rounded-full" />
