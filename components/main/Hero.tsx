@@ -3,7 +3,7 @@
 import { Globe, Sparkles, Bug, Blocks } from "lucide-react";
 import Shuffle from "@/components/Shuffle";
 import { Press_Start_2P } from "next/font/google";
-import { GridScan } from "@/components/main/GridScan";
+
 
 const pixel = Press_Start_2P({
   subsets: ["latin"],
@@ -23,17 +23,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen px-6 pt-32 pb-20 overflow-hidden">
 <div className="absolute inset-0 -z-10 overflow-hidden bg-[#05010d]">
-  <GridScan
-  scanColor="#a081e9"
-  scanOpacity={0.16}
-  scanGlow={0.18}
-  scanDuration={5.5}
-  scanDelay={2.5}
-  linesColor="#1e1b2e"
-  noiseIntensity={0.003}
-  chromaticAberration={0}
-  bloomIntensity={0.02}
-/>
+ 
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(168,85,247,0.18),transparent_35%)]" />
 
   <div className="absolute bottom-[-120px] left-1/2 -translate-x-1/2 w-[900px] h-[260px] bg-fuchsia-500/30 blur-[120px] rounded-full" />
