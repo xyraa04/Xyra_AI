@@ -5,7 +5,8 @@ import Showcase from "@/components/main/Showcase";
 import LogoStrip from "@/components/main/LogoStrip";
 import SplitFeature from "@/components/main/SplitFeature";
 import HowItWorks from "@/components/main/HowItWorks";
-import UseCases from "@/components/main/UseCases";
+import Testimonial from "@/components/main/Testimonial";
+
 
 export default function Page() {
   return (
@@ -22,7 +23,7 @@ export default function Page() {
 
 <HowItWorks />
 
-<UseCases /> 
+<Testimonial /> 
 
 <Footer />
 
