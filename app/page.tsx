@@ -3,6 +3,7 @@ import Hero from "@/components/main/Hero";
 import Footer from "@/components/main/footer";
 import Showcase from "@/components/main/Showcase";
 import LogoStrip from "@/components/main/LogoStrip";
+import SplitFeature from "@/components/main/SplitFeature";
 
 
 export default function Page() {
@@ -11,6 +12,8 @@ export default function Page() {
       <Navbar />
 <Hero />
 <LogoStrip />
+<SplitFeature />
+
 <Showcase />
 <Footer />
     </main>
