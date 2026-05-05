@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
 import { IBM_Plex_Mono } from "next/font/google";
+import { AuthProvider } from "@/context/auth-context";
 
 const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -51,7 +52,9 @@ export default function RootLayout({
           <Toaster/>
           <main className="w-full min-h-screen">
             <div className="">
-              {children}
+             <AuthProvider>
+               {children}
+             </AuthProvider>
             </div>
           </main>
         </ThemeProvider>
