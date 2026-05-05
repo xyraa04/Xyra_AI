@@ -9,7 +9,7 @@ import {
 
 import Image from "next/image";
 import Link from "next/link";
-import { GridScan } from "@/components/GridScan";
+
 
 export default function MainNavbar() {
   const navItems = [
@@ -20,18 +20,7 @@ export default function MainNavbar() {
   ];
 
   return (
-    <><div className="absolute inset-0 -z-10">
-      <GridScan
-        scanColor="#a081e9"
-        scanOpacity={0.16}
-        scanGlow={0.18}
-        scanDuration={5.5}
-        scanDelay={2.5}
-        linesColor="#1e1b2e"
-        noiseIntensity={0.003}
-        chromaticAberration={0}
-        bloomIntensity={0.02} />
-    </div>
+    <>
     <Navbar className="top-0 pt-4 bg-transparent border-none shadow-none">
         <NavBody className="max-w-6xl mx-auto px-6">
 
