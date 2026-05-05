@@ -5,6 +5,7 @@ import Shuffle from "@/components/Shuffle";
 import { Press_Start_2P } from "next/font/google";
 import { GridScan } from "@/components/GridScan";
 
+
 const pixel = Press_Start_2P({
   subsets: ["latin"],
   weight: "400",
