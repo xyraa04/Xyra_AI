@@ -16,15 +16,12 @@ export default function MainNavbar() {
     { name: "Docs", link: "/docs" },
   ];
 
-  // Debug log
-  console.log('🔵 Navbar State:', { user: !!user, loading, email: user?.email });
-
   const handleAuthClick = () => {
     if (user) {
       signOut();
     } else {
-      const returnUrl = encodeURIComponent(window.location.href);
-      window.location.href = `${accountsUrl}/sign-in?redirect=${returnUrl}`;
+      const returnUrl = encodeURIComponent(window.location.origin);
+      window.location.href = `${accountsUrl}/consent?redirect=${returnUrl}&product=xyra-ai`;
     }
   };
 
@@ -60,11 +57,7 @@ export default function MainNavbar() {
             <>
               <div className="hidden sm:flex items-center gap-2">
                 {user.photoURL ? (
-                  <img
-                    src={user.photoURL}
-                    alt=""
-                    className="w-7 h-7 rounded-full"
-                  />
+                  <img src={user.photoURL} alt="" className="w-7 h-7 rounded-full" />
                 ) : (
                   <div className="w-7 h-7 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 flex items-center justify-center text-xs text-white font-medium">
                     {user.displayName?.[0] || user.email?.[0] || "U"}
