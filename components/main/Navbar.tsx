@@ -17,12 +17,13 @@ export default function MainNavbar() {
   ];
 
   const handleAuthClick = () => {
-    if (user) {
-      signOut();
-    } else {
-      const returnUrl = encodeURIComponent(window.location.origin);
-      window.location.href = `${accountsUrl}/consent?redirect=${returnUrl}&product=xyra-ai`;
-    }
+    const accountsUrl = process.env.NEXT_PUBLIC_XYRA_ACCOUNTS_URL || "http://localhost:3000";
+    const params = new URLSearchParams({
+       client_id: "xyra-ai",
+      redirect_uri: `${window.location.origin}/auth/callback`,
+     
+    })
+    window.location.href = `${accountsUrl}/consent?${params.toString()}`;
   };
 
   return (
