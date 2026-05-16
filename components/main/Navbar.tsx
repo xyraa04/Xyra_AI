@@ -16,15 +16,16 @@ export default function MainNavbar() {
     { name: "Docs", link: "/docs" },
   ];
 
-  const handleAuthClick = () => {
-    const accountsUrl = process.env.NEXT_PUBLIC_XYRA_ACCOUNTS_URL || "http://localhost:3000";
-    const params = new URLSearchParams({
-       client_id: "xyra-ai",
-      redirect_uri: `${window.location.origin}/auth/callback`,
-     
-    })
-    window.location.href = `${accountsUrl}/consent?${params.toString()}`;
-  };
+const handleAuthClick = () => {
+  const accountsUrl = process.env.NEXT_PUBLIC_XYRA_ACCOUNTS_URL || "http://localhost:3000";
+  const params = new URLSearchParams({
+    client_id: "xyra-ai",
+    redirect_uri: `${window.location.origin}/auth/callback`,
+    scope: "identity email profile",
+    state: Math.random().toString(36).substring(7), // CSRF protection
+  });
+  window.location.href = `${accountsUrl}/consent?${params.toString()}`;
+};
 
   return (
     <Navbar className="top-0 pt-4 bg-transparent border-none shadow-none">
